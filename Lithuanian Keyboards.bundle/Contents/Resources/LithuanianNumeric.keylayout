@@ -415,6 +415,8 @@
             <key code="27" output="–"/>
             <key code="28" output="8"/>
             <key code="29" output="0"/>
+            <!-- Space bar outputs non-breaking space -->
+            <key code="49" output="&#x00a0;"/>
         </keyMap>
         <keyMap index="4">
             <key code="18" output="!"/>
