@@ -401,7 +401,6 @@
             <key code="126" output="&#x001e;"/>
         </keyMap>
         <keyMap index="3">
-            <key code="10" output="§"/>
             <key code="14" output="€"/>
             <key code="18" output="1"/>
             <key code="19" output="2"/>
@@ -415,8 +414,6 @@
             <key code="27" output="–"/>
             <key code="28" output="8"/>
             <key code="29" output="0"/>
-            <!-- Space bar outputs non-breaking space -->
-            <key code="49" output="&#x00a0;"/>
         </keyMap>
         <keyMap index="4">
             <key code="18" output="!"/>
