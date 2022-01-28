@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!-- Lithuanian Standard (LST 1582:2000) keyboard layout for Mac OS X -->
-<!-- More information on layout: http://ims.mii.lt/klav/ -->
-<!-- Last edited by Rimas Kudelis on 2007-11-22 at 21:00 (EEST) -->
-<keyboard group="126" id="-3806" name="Lithuanian – Standard" maxout="1">
+<!-- More information on layout: http://klav.lt/ -->
+<keyboard group="126" id="-3806" name="Lithuanian - Standard" maxout="3">
     <layouts>
-        <layout first="0" last="17" modifiers="commonModifiers" mapSet="ANSI"/>
+        <!-- all layouts not specified here will default to ANSI -->
+        <layout first="0" last="3" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="4" last="5" modifiers="commonModifiers" mapSet="ISO"/>
+        <layout first="6" last="6" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="7" last="7" modifiers="commonModifiers" mapSet="ISO"/>
+        <layout first="8" last="8" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="9" last="9" modifiers="commonModifiers" mapSet="ISO"/>
+        <layout first="10" last="12" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="13" last="13" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- code 14 is the keypad for Apple Adjustable Keyboard, code 15 unknown -->
+        <layout first="16" last="16" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="17" last="17" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- code 18 is JIS -->
+        <!-- code 19 unknown -->
+        <layout first="20" last="20" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- codes 21 - 23 are JIS -->
+        <layout first="24" last="24" modifiers="commonModifiers" mapSet="ANSI"/>
+        <!-- codes 25 and 26 unknown -->
+        <layout first="27" last="28" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="29" last="29" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- code 30 is JIS -->
+        <layout first="31" last="31" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="32" last="32" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- code 33 is JIS -->
+        <layout first="34" last="34" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="35" last="35" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- code 36 is JIS -->
+        <layout first="37" last="37" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="38" last="38" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- code 39 is JIS -->
+        <layout first="40" last="40" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="41" last="41" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- code 42 is JIS -->
+        <layout first="43" last="43" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="44" last="44" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- code 45 is JIS -->
+        <layout first="46" last="46" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="47" last="47" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- code 48 is JIS -->
+        <!-- codes 49 - 193 unknown -->
+        <!-- code 194 is JIS -->
+        <layout first="195" last="195" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="196" last="196" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- code 197 is JIS -->
+        <layout first="198" last="198" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="199" last="199" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- codes 200 and 201 are JIS -->
+        <layout first="202" last="202" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="203" last="203" modifiers="commonModifiers" mapSet="ISO"/>
+        <layout first="204" last="204" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="205" last="205" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- codes 206 - 207 are JIS -->
+        <!-- codes 208 - 258 unknown -->
+        <layout first="259" last="259" modifiers="commonModifiers" mapSet="ANSI"/>
+        <!-- codes 260 - 1201 uknown -->
+        <layout first="1202" last="1202" modifiers="commonModifiers" mapSet="ANSI"/>
+        <layout first="1203" last="1203" modifiers="commonModifiers" mapSet="ISO"/>
+        <!-- codes 1204 - 1206 unknown -->
+        <!-- code 1207 is JIS -->
     </layouts>
     <modifierMap id="commonModifiers" defaultIndex="0">
         <keyMapSelect mapIndex="0">
@@ -20,10 +77,13 @@
         <keyMapSelect mapIndex="3">
             <modifier keys="anyOption caps?"/>
         </keyMapSelect>
+        <keyMapSelect mapIndex="4">
+            <modifier keys="anyShift anyOption caps?" />
+        </keyMapSelect>
     </modifierMap>
-    <keyMapSet id="ANSI">
+    <keyMapSet id="ISO">
         <keyMap index="0">
-        <!-- Level 1 -->
+            <!-- Level 1: no modifiers -->
             <key code="0" output="a"/>
             <key code="1" output="s"/>
             <key code="2" output="d"/>
@@ -34,7 +94,8 @@
             <key code="7" output="ū"/>
             <key code="8" output="c"/>
             <key code="9" output="v"/>
-            <key code="10" output="`"/>
+            <!-- Key 10 has position E00 on ISO keyboards, doesn't exist elsewhere -->
+            <key code="10" output="&#x0060;"/> <!-- GRAVE ACCENT -->
             <key code="11" output="b"/>
             <key code="12" output="ą"/>
             <key code="13" output="ž"/>
@@ -60,8 +121,8 @@
             <key code="33" output="į"/>
             <key code="34" output="i"/>
             <key code="35" output="p"/>
-            <!-- The Return key -->
-            <key code="36" output="&#x000d;"/>
+            <!-- Key 36 is the Return key -->
+            <key code="36" output="&#x000d;"/> <!-- CARRIAGE RETURN (CR) -->
             <key code="37" output="l"/>
             <key code="38" output="j"/>
             <key code="39" output="ė"/>
@@ -73,36 +134,37 @@
             <key code="45" output="n"/>
             <key code="46" output="m"/>
             <key code="47" output="f"/>
-            <!-- The Tab key-->
-            <key code="48" output="&#x0009;"/>
-            <!-- Space bar -->
-            <key code="49" output=" "/>
-            <!-- The „European“ key, which lives between Shift and Z -->
-            <key code="50" output="&#x003c;"/><!-- less than -->
-            <!-- Backspace -->
-            <key code="51" output="&#x0008;"/>
-            <!-- ??? -->
-            <key code="52" output="&#x0003;"/>
-            <!-- Escape -->
-            <key code="53" output="&#x001b;"/>
-            <!-- gap, 54 through 64 -->
+            <!-- Key 48 is the Tab key-->
+            <key code="48" output="&#x0009;"/> <!-- CHARACTER TABULATION -->
+            <!-- Key 49 is the Space bar -->
+            <key code="49" output="&#x0020;"/> <!-- SPACE -->
+            <!-- Key 50 has position B00 on ISO keyboards, and E00 on ANSI keyboards. It doesn't exist on JIS keyboards -->
+            <key code="50" output="&#x003c;"/> <!-- LESS-THAN SIGN -->
+            <!-- Key 51 is the Backspace key -->
+            <key code="51" output="&#x0008;"/> <!-- BACKSPACE -->
+            <key code="52" output="&#x0003;"/> <!-- END OF TEXT -->
+            <!-- Key 53 is the Escape key -->
+            <key code="53" output="&#x001b;"/> <!-- ESCAPE -->
+            <!-- gap, 54 through 63 -->
+            <key code="64" output="&#x0010;"/>
             <!-- Numeric keypad -->
-            <!-- Decimal delimiter -->
+            <!-- Key 65 is the Decimal delimiter key -->
             <key code="65" output=","/>
             <key code="66" output="*"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
             <key code="70" output="+"/>
-            <!-- The Clear button -->
-            <key code="71" output="&#x001b;"/>
+            <!-- Key 71 is the Clear key -->
+            <key code="71" output="&#x001b;"/> <!-- ESCAPE -->
             <key code="72" output="="/>
             <!-- gap, 73 through 74 -->
             <key code="75" output="/"/>
             <key code="76" output="&#x0003;"/>
             <key code="77" output="/"/>
             <key code="78" output="-"/>
-            <!-- gap, 79 through 80 -->
+            <key code="79" output="&#x0010;"/>
+            <key code="80" output="&#x0010;"/>
             <key code="81" output="="/>
             <key code="82" output="0"/>
             <key code="83" output="1"/>
@@ -149,7 +211,7 @@
             <key code="126" output="&#x001e;"/>
         </keyMap>
         <keyMap index="1">
-        <!-- Level 2 – Shift pressed -->
+            <!-- Level 2: Shift pressed -->
             <key code="0" output="A"/>
             <key code="1" output="S"/>
             <key code="2" output="D"/>
@@ -160,6 +222,7 @@
             <key code="7" output="Ū"/>
             <key code="8" output="C"/>
             <key code="9" output="V"/>
+            <!-- Key 10 has position E00 on ISO keyboards, doesn't exist elsewhere -->
             <key code="10" output="~"/>
             <key code="11" output="B"/>
             <key code="12" output="Ą"/>
@@ -187,7 +250,7 @@
             <key code="34" output="I"/>
             <key code="35" output="P"/>
             <!-- The Return key -->
-            <key code="36" output="&#x000d;"/>
+            <key code="36" output="&#x000d;"/> <!-- CARRIAGE RETURN (CR) -->
             <key code="37" output="L"/>
             <key code="38" output="J"/>
             <key code="39" output="Ė"/>
@@ -199,36 +262,37 @@
             <key code="45" output="N"/>
             <key code="46" output="M"/>
             <key code="47" output="F"/>
-            <!-- The Tab key-->
-            <key code="48" output="&#x0009;"/>
-            <!-- Space bar -->
-            <key code="49" output=" "/>
-            <!-- The „European“ key, which lives between Shift and Z -->
-            <key code="50" output="&#x003e;"/><!-- greater than -->
-            <!-- Backspace -->
-            <key code="51" output="&#x0008;"/>
-            <!-- ??? -->
-            <key code="52" output="&#x0003;"/>
-            <!-- Escape -->
-            <key code="53" output="&#x001b;"/>
-            <!-- gap, 54 through 64 -->
+            <!-- Key 48 is the Tab key-->
+            <key code="48" output="&#x0009;"/> <!-- CHARACTER TABULATION -->
+            <!-- Key 49 is the Space bar -->
+            <key code="49" output="&#x0020;"/> <!-- SPACE -->
+            <!-- Key 50 has position B00 on ISO keyboards, but E00 on ANSI keyboards -->
+            <key code="50" output="&#x003e;"/> <!-- GREATER-THAN SIGN -->
+            <!-- Key 51 is the Backspace key -->
+            <key code="51" output="&#x0008;"/> <!-- BACKSPACE -->
+            <key code="52" output="&#x0003;"/> <!-- END OF TEXT -->
+            <!-- Key 53 is the Escape key -->
+            <key code="53" output="&#x001b;"/> <!-- ESCAPE -->
+            <!-- gap, 54 through 63 -->
+            <key code="64" output="&#x0010;"/>
             <!-- Numeric keypad -->
-            <!-- Decimal delimiter -->
+            <!-- Key 65 is the Decimal delimiter key -->
             <key code="65" output=","/>
             <key code="66" output="*"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
             <key code="70" output="+"/>
-            <!-- The Clear button -->
-            <key code="71" output="&#x001b;"/>
+            <!-- Key 71 is the Clear key -->
+            <key code="71" output="&#x001b;"/> <!-- ESCAPE -->
             <key code="72" output="="/>
             <!-- gap, 73 through 74 -->
             <key code="75" output="/"/>
             <key code="76" output="&#x0003;"/>
             <key code="77" output="/"/>
             <key code="78" output="-"/>
-            <!-- gap, 79 through 80 -->
+            <key code="79" output="&#x0010;"/>
+            <key code="80" output="&#x0010;"/>
             <key code="81" output="="/>
             <key code="82" output="0"/>
             <key code="83" output="1"/>
@@ -275,7 +339,7 @@
             <key code="126" output="&#x001e;"/>
         </keyMap>
         <keyMap index="2">
-        <!-- Caps Lock pressed – same as L2 for letters, same as L1 for other symbols-->
+            <!-- Caps Lock on: same as keyMap 1 for letters, same as keyMap 0 for other symbols -->
             <key code="0" output="A"/>
             <key code="1" output="S"/>
             <key code="2" output="D"/>
@@ -286,7 +350,8 @@
             <key code="7" output="Ū"/>
             <key code="8" output="C"/>
             <key code="9" output="V"/>
-            <key code="10" output="`"/>
+            <!-- Key 10 has position E00 on ISO keyboards, doesn't exist elsewhere -->
+            <key code="10" output="&#x0060;"/> <!-- GRAVE ACCENT -->
             <key code="11" output="B"/>
             <key code="12" output="Ą"/>
             <key code="13" output="Ž"/>
@@ -313,7 +378,7 @@
             <key code="34" output="I"/>
             <key code="35" output="P"/>
             <!-- The Return key -->
-            <key code="36" output="&#x000d;"/>
+            <key code="36" output="&#x000d;"/> <!-- CARRIAGE RETURN (CR) -->
             <key code="37" output="L"/>
             <key code="38" output="J"/>
             <key code="39" output="Ė"/>
@@ -325,21 +390,21 @@
             <key code="45" output="N"/>
             <key code="46" output="M"/>
             <key code="47" output="F"/>
-            <!-- The Tab key-->
+            <!-- Key 48 is the Tab key-->
             <key code="48" output="&#x0009;"/>
-            <!-- Space bar -->
-            <key code="49" output=" "/>
-            <!-- The „European“ key, which lives between Shift and Z -->
-            <key code="50" output="&#x003c;"/><!-- less than -->
-            <!-- Backspace -->
+            <!-- Key 49 is the Space bar -->
+            <key code="49" output="&#x0020;"/> <!-- SPACE -->
+            <!-- Key 50 has position B00 on ISO keyboards, but E00 on ANSI keyboards. It doesn't exist on JIS keyboards -->
+            <key code="50" output="&#x003c;"/> <!-- LESS-THAN SIGN -->
+            <!-- Key 51 is the Backspace key -->
             <key code="51" output="&#x0008;"/>
-            <!-- ??? -->
             <key code="52" output="&#x0003;"/>
-            <!-- Escape -->
+            <!-- Key 53 is the Escape key -->
             <key code="53" output="&#x001b;"/>
-            <!-- gap, 54 through 64 -->
+            <!-- gap, 54 through 63 -->
+            <key code="64" output="&#x0010;"/>
             <!-- Numeric keypad -->
-            <!-- Decimal delimiter -->
+            <!-- Key 65 is the Decimal delimiter key -->
             <key code="65" output=","/>
             <key code="66" output="*"/>
             <key code="67" output="*"/>
@@ -354,7 +419,8 @@
             <key code="76" output="&#x0003;"/>
             <key code="77" output="/"/>
             <key code="78" output="-"/>
-            <!-- gap, 79 through 80 -->
+            <key code="79" output="&#x0010;"/>
+            <key code="80" output="&#x0010;"/>
             <key code="81" output="="/>
             <key code="82" output="0"/>
             <key code="83" output="1"/>
@@ -401,12 +467,8 @@
             <key code="126" output="&#x001e;"/>
         </keyMap>
         <keyMap index="3">
-        <!-- Level 3 – Option pressed (Macs don't have an AltGr key) -->
-            <!-- codes 6, 7 and 8 are here to compensate missing code 50 on non-European keyboards -->
-            <key code="6" output="&#x003c;"/><!-- less than -->
-            <key code="7" output="&#x003e;"/><!-- greater than -->
-            <key code="8" output="–"/><!-- en dash -->
-            <key code="10" output="´"/>
+            <!-- Level 3: Option pressed (Macs don't have an AltGr key) -->
+            <key code="10" output="&#x00b4;"/> <!-- ACUTE ACCENT -->
             <key code="14" output="€"/>
             <key code="18" output="@"/>
             <key code="19" output="_"/>
@@ -416,20 +478,46 @@
             <key code="23" output="§"/>
             <key code="24" output="%"/>
             <key code="25" output="["/>
-            <key code="26" output="&#x0026;"/><!-- ampersand -->
+            <key code="26" output="&#x0026;"/> <!-- AMPERSAND -->
             <key code="27" output="'"/>
             <key code="28" output="*"/>
             <key code="29" output="]"/>
             <key code="30" output="}"/>
             <key code="33" output="{"/>
-            <key code="39" output="&#x0022;"/><!-- quotation mark -->
+            <key code="39" output="&#x0022;"/> <!-- QUOTATION MARK -->
             <key code="42" output="|"/>
-            <key code="43" output="„"/>
+            <key code="43" output="&#x201e;"/> <!-- DOUBLE LOW-9 QUOTATION MARK-->
             <key code="44" output="\"/>
-            <key code="47" output="“"/>
-            <!-- Space bar outputs non-breaking space -->
-            <key code="49" output="&#x00a0;"/>
-            <key code="50" output="–"/><!-- en dash -->
+            <key code="47" output="&#x201c;"/> <!-- LEFT DOUBLE QUOTATION MARK -->
+            <!-- Key 49 is the Space bar -->
+            <key code="49" output="&#x00a0;"/> <!-- NO-BREAK SPACE -->
+            <key code="50" output="&#x2013;"/> <!-- EN DASH -->
+        </keyMap>
+    </keyMapSet>
+    <keyMapSet id="ANSI">
+        <keyMap index="0" baseMapSet="ISO" baseIndex="0">
+            <!-- Level 1: no modifiers -->
+            <!-- Key 50 has position B00 on ISO keyboards, but E00 on ANSI keyboards -->
+            <key code="50" output="&#x0060;"/> <!-- GRAVE ACCENT -->
+        </keyMap>
+        <keyMap index="1" baseMapSet="ISO" baseIndex="1">
+            <!-- Level 2: Shift pressed -->
+            <!-- Key 50 has position B00 on ISO keyboards, but E00 on ANSI keyboards -->
+            <key code="50" output="~"/>
+        </keyMap>
+        <keyMap index="2" baseMapSet="ISO" baseIndex="2">
+            <!-- Caps Lock on: same as keyMap 1 for letters, same as keyMap 0 for other symbols -->
+            <!-- Key 50 has position B00 on ISO keyboards, but E00 on ANSI keyboards -->
+            <key code="50" output="&#x0060;"/> <!-- GRAVE ACCENT -->
+        </keyMap>
+        <keyMap index="3" baseMapSet="ISO" baseIndex="3">
+            <!-- Level 3: Option pressed (Macs don't have an AltGr key) -->
+            <!-- There is no key in position B00 on ANSI keyboards. Compensate it with Option level of keys B01, B02, B03-->
+            <key code="6" output="&#x003c;"/> <!-- LESS-THAN SIGN -->
+            <key code="7" output="&#x003e;"/> <!-- GREATER-THAN SIGN -->
+            <key code="8" output="&#x2013;"/> <!-- EN DASH -->
+            <!-- Key 50 has position B00 on ISO keyboards, but E00 on ANSI keyboards -->
+            <key code="50" output="&#x00b4;"/> <!-- ACUTE ACCENT -->
         </keyMap>
     </keyMapSet>
 </keyboard>
