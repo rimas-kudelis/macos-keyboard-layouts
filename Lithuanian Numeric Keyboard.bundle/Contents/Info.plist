@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Lithuanian keyboard layouts for Mac OS X</string>
+	<string>Lithuanian Numeric keyboard layout for Mac OS X</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.apple.keyboardlayout.lithuanian</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -19,11 +19,6 @@
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>KLInfo_Lithuanian – Numeric</key>
-	<dict>
-		<key>ISOCode</key>
-		<string>lt</string>
-	</dict>
-	<key>KLInfo_Lithuanian – Standard</key>
 	<dict>
 		<key>ISOCode</key>
 		<string>lt</string>
