@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!-- Fri, 24 Feb 2006 Generated from KCHR: "Lithuanian" -->
-<!-- Contributions by: Simonas Kiela, Rimas Kudelis -->
-<!--Last edited by Rimas Kudelis on 2007-10-06 at 22:30 (EEST)-->
-<keyboard group="126" id="-9559" name="Lithuanian – Numeric" maxout="3">
+<keyboard group="126" id="-9559" name="Lithuanian - Numeric" maxout="3">
     <layouts>
         <layout first="0" last="17" modifiers="commonModifiers" mapSet="ANSI"/>
     </layouts>

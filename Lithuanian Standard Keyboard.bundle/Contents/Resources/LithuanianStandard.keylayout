@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!-- Lithuanian Standard (LST 1582:2000) keyboard layout for Mac OS X -->
+<!-- Lithuanian Standard (LST 1582:2012) keyboard layout for macOS -->
 <!-- More information on layout: http://klav.lt/ -->
 <keyboard group="126" id="-3806" name="Lithuanian - Standard" maxout="3">
     <layouts>

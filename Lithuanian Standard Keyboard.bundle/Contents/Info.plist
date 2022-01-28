@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Lithuanian Standard Keyboard layout for Mac OS X</string>
+	<string>Lithuanian Standard Keyboard layout for macOS</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.apple.keyboardlayout.lithuanianstd</string>
 	<key>CFBundleInfoDictionaryVersion</key>
