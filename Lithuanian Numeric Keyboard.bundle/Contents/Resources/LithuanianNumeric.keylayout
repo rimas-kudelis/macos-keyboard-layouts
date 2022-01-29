@@ -204,7 +204,7 @@
             <!-- Key 48 is the Tab key -->
             <key code="48" output="&#x0009;"/>
             <!-- Key 49 is the Space bar -->
-            <key code="49" output=" "/>
+            <key code="49" output="&#x0020;"/> <!-- SPACE -->
             <!-- Key 50 has position B00 on ISO keyboards, but E00 on ANSI keyboards -->
             <key code="50" output="~"/>
             <!-- Key 51 is the Backspace key -->
