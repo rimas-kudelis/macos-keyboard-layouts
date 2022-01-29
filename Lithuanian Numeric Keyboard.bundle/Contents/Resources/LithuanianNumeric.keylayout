@@ -51,7 +51,7 @@
             <key code="22" output="š"/>
             <key code="23" output="į"/>
             <key code="24" output="ž"/>
-            <key code="25" output="&#x201e;"/> <!-- DOUBLE LOW-9 QUOTATION MARK-->
+            <key code="25" output="&#x201e;"/> <!-- DOUBLE LOW-9 QUOTATION MARK -->
             <key code="26" output="ų"/>
             <key code="27" output="-"/>
             <key code="28" output="ū"/>
@@ -75,7 +75,7 @@
             <key code="45" output="n"/>
             <key code="46" output="m"/>
             <key code="47" output="."/>
-            <!-- Key 48 is the Tab key-->
+            <!-- Key 48 is the Tab key -->
             <key code="48" output="&#x0009;"/> <!-- CHARACTER TABULATION -->
             <!-- Key 49 is the Space bar -->
             <key code="49" output="&#x0020;"/> <!-- SPACE -->
@@ -201,7 +201,7 @@
             <key code="45" output="N"/>
             <key code="46" output="M"/>
             <key code="47" output="&#x003e;"/> <!-- GREATER-THAN SIGN -->
-            <!-- Key 48 is the Tab key-->
+            <!-- Key 48 is the Tab key -->
             <key code="48" output="&#x0009;"/>
             <!-- Key 49 is the Space bar -->
             <key code="49" output=" "/>
@@ -303,7 +303,7 @@
             <key code="22" output="Š"/>
             <key code="23" output="Į"/>
             <key code="24" output="Ž"/>
-            <key code="25" output="&#x201e;"/> <!-- DOUBLE LOW-9 QUOTATION MARK-->
+            <key code="25" output="&#x201e;"/> <!-- DOUBLE LOW-9 QUOTATION MARK -->
             <key code="26" output="Ų"/>
             <key code="27" output="-"/>
             <key code="28" output="Ū"/>
@@ -327,7 +327,7 @@
             <key code="45" output="N"/>
             <key code="46" output="M"/>
             <key code="47" output="."/>
-            <!-- Key 48 is the Tab key-->
+            <!-- Key 48 is the Tab key -->
             <key code="48" output="&#x0009;"/> <!-- CHARACTER TABULATION -->
             <!-- Key 49 is the Space bar -->
             <key code="49" output="&#x0020;"/> <!-- SPACE -->

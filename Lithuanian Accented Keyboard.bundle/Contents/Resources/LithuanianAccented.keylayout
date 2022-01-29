@@ -134,7 +134,7 @@
             <key code="45" action="n"/>
             <key code="46" action="m"/>
             <key code="47" output="f"/>
-            <!-- Key 48 is the Tab key-->
+            <!-- Key 48 is the Tab key -->
             <key code="48" output="&#x0009;"/> <!-- CHARACTER TABULATION -->
             <!-- Key 49 is the Space bar -->
             <key code="49" action="&#x0020;"/> <!-- SPACE -->
@@ -262,7 +262,7 @@
             <key code="45" action="N"/>
             <key code="46" action="M"/>
             <key code="47" output="F"/>
-            <!-- Key 48 is the Tab key-->
+            <!-- Key 48 is the Tab key -->
             <key code="48" output="&#x0009;"/> <!-- CHARACTER TABULATION -->
             <!-- Key 49 is the Space bar -->
             <key code="49" action="&#x0020;"/> <!-- SPACE -->
@@ -390,7 +390,7 @@
             <key code="45" action="N"/>
             <key code="46" action="M"/>
             <key code="47" output="F"/>
-            <!-- Key 48 is the Tab key-->
+            <!-- Key 48 is the Tab key -->
             <key code="48" output="&#x0009;"/>
             <!-- Key 49 is the Space bar -->
             <key code="49" action="&#x0020;"/> <!-- SPACE -->
@@ -515,7 +515,7 @@
         </keyMap>
         <keyMap index="3" baseMapSet="ISO" baseIndex="3">
             <!-- Level 3: Option pressed (Macs don't have an AltGr key) -->
-            <!-- There is no key in position B00 on ANSI keyboards. Compensate it with Option level of keys B01, B02, B03-->
+            <!-- There is no key in position B00 on ANSI keyboards. Compensate it with Option level of keys B01, B02, B03 -->
             <key code="6" output="&#x003c;"/> <!-- LESS-THAN SIGN -->
             <key code="7" output="&#x003e;"/> <!-- GREATER-THAN SIGN -->
             <key code="8" output="&#x2013;"/> <!-- EN DASH -->
@@ -830,7 +830,7 @@
         <action id="ū">
             <when state="none" output="ū"/> <!-- LATIN SMALL LETTER U WITH MACRON -->
             <when state="acute" output="ū&#x0301;"/> <!-- LATIN SMALL LETTER U WITH MACRON AND ACUTE -->
-            <when state="tilde" output="ū&#x0303;"/> <!-- LATIN SMALL LETTER U WITH MACRON AND TILDE-->
+            <when state="tilde" output="ū&#x0303;"/> <!-- LATIN SMALL LETTER U WITH MACRON AND TILDE -->
         </action>
         <action id="V">
             <when state="none" output="V"/>
