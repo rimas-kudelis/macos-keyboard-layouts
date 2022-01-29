@@ -2,7 +2,7 @@
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!-- Lithuanian Accented keyboard layout for macOS -->
 <!-- More information on layout: http://klav.lt/ -->
-<keyboard group="126" id="-3806" name="Lithuanian - Accented" maxout="3">
+<keyboard group="126" id="-3807" name="Lithuanian - Accented" maxout="3">
     <layouts>
         <!-- all unknown codes will default to ANSI -->
         <layout first="0" last="3" modifiers="commonModifiers" mapSet="ANSI"/>
@@ -77,11 +77,9 @@
         <keyMapSelect mapIndex="3">
             <modifier keys="anyOption caps?"/>
         </keyMapSelect>
-<!--
         <keyMapSelect mapIndex="4">
             <modifier keys="anyOption anyShift caps?"/>
         </keyMapSelect>
--->
     </modifierMap>
     <keyMapSet id="ISO">
         <keyMap index="0">
@@ -89,18 +87,18 @@
             <key code="0" action="a"/>
             <key code="1" action="s"/>
             <key code="2" output="d"/>
-            <key code="3" output="&#x0161;"/> <!-- LATIN SMALL LETTER S WITH CARON -->
+            <key code="3" output="š"/>
             <key code="4" action="h"/>
             <key code="5" action="g"/>
             <key code="6" action="z"/>
-            <key code="7" action="&#x016b;"/> <!-- LATIN SMALL LETTER U WITH MACRON -->
+            <key code="7" action="ū"/>
             <key code="8" action="c"/>
             <key code="9" action="v"/>
             <!-- Key 10 has position E00 on ISO keyboards, doesn't exist elsewhere -->
             <key code="10" action="grave"/> <!-- deadkey grave -->
             <key code="11" output="b"/>
-            <key code="12" action="&#x0105;"/> <!-- LATIN SMALL LETTER A WITH OGONEK -->
-            <key code="13" output="&#x017e;"/> <!-- LATIN SMALL LETTER Z WITH CARON -->
+            <key code="12" action="ą"/>
+            <key code="13" output="ž"/>
             <key code="14" action="e"/>
             <key code="15" action="r"/>
             <key code="16" action="y"/>
@@ -120,19 +118,19 @@
             <key code="30" action="w"/>
             <key code="31" action="o"/>
             <key code="32" action="u"/>
-            <key code="33" action="&#x012f;"/> <!-- LATIN SMALL LETTER I WITH OGONEK -->
+            <key code="33" action="į"/>
             <key code="34" action="i"/>
             <key code="35" action="p"/>
             <!-- Key 36 is the Return key -->
             <key code="36" output="&#x000d;"/> <!-- CARRIAGE RETURN (CR) -->
             <key code="37" action="l"/>
             <key code="38" action="j"/>
-            <key code="39" action="&#x0117;"/> <!-- LATIN SMALL LETTER E WITH DOT ABOVE -->
+            <key code="39" action="ė"/>
             <key code="40" action="k"/>
-            <key code="41" action="&#x0173;"/> <!-- LATIN SMALL LETTER U WITH OGONEK -->
+            <key code="41" action="ų"/>
             <key code="42" output="q"/>
-            <key code="43" output="&#x010d;"/> <!-- LATIN SMALL LETTER C WITH CARON -->
-            <key code="44" action="&#x0119;"/> <!-- LATIN SMALL LETTER E WITH OGONEK -->
+            <key code="43" output="č"/>
+            <key code="44" action="ę"/>
             <key code="45" action="n"/>
             <key code="46" action="m"/>
             <key code="47" output="f"/>
@@ -152,18 +150,18 @@
             <!-- Numeric keypad -->
             <!-- Key 65 is the Decimal delimiter key -->
             <key code="65" output=","/>
-            <key code="66" output="&#x001d;"/>
+            <key code="66" output="*"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
-            <key code="70" output="&#x001c;"/>
+            <key code="70" output="+"/>
             <!-- Key 71 is the Clear key -->
             <key code="71" output="&#x001b;"/> <!-- ESCAPE -->
-            <key code="72" output="&#x001f;"/>
+            <key code="72" output="="/>
             <!-- gap, 73 through 74 -->
             <key code="75" output="/"/>
             <key code="76" output="&#x0003;"/>
-            <key code="77" output="&#x001e;"/>
+            <key code="77" output="/"/>
             <key code="78" output="-"/>
             <key code="79" output="&#x0010;"/>
             <key code="80" output="&#x0010;"/>
@@ -217,18 +215,18 @@
             <key code="0" action="A"/>
             <key code="1" action="S"/>
             <key code="2" output="D"/>
-            <key code="3" output="&#x0160;"/> <!-- LATIN CAPITAL LETTER S WITH CARON -->
+            <key code="3" output="Š"/>
             <key code="4" action="H"/>
             <key code="5" action="G"/>
             <key code="6" action="Z"/>
-            <key code="7" action="&#x016a;"/> <!-- LATIN CAPITAL LETTER U WITH MACRON -->
+            <key code="7" action="Ū"/>
             <key code="8" action="C"/>
             <key code="9" action="V"/>
             <!-- Key 10 has position E00 on ISO keyboards, doesn't exist elsewhere -->
             <key code="10" action="tilde"/> <!-- deadkey tilde -->
             <key code="11" output="B"/>
-            <key code="12" action="&#x0104;"/> <!-- LATIN CAPITAL LETTER A WITH OGONEK -->
-            <key code="13" output="&#x017d;"/> <!-- LATIN CAPITAL LETTER Z WITH CARON -->
+            <key code="12" action="Ą"/>
+            <key code="13" output="Ž"/>
             <key code="14" action="E"/>
             <key code="15" action="R"/>
             <key code="16" action="Y"/>
@@ -248,19 +246,19 @@
             <key code="30" action="W"/>
             <key code="31" action="O"/>
             <key code="32" action="U"/>
-            <key code="33" action="&#x012e;"/> <!-- LATIN CAPITAL LETTER I WITH OGONEK -->
+            <key code="33" action="Į"/>
             <key code="34" action="I"/>
             <key code="35" action="P"/>
             <!-- The Return key -->
             <key code="36" output="&#x000d;"/> <!-- CARRIAGE RETURN (CR) -->
             <key code="37" action="L"/>
             <key code="38" action="J"/>
-            <key code="39" action="&#x0116;"/> <!-- LATIN CAPITAL LETTER E WITH DOT ABOVE -->
+            <key code="39" action="Ė"/>
             <key code="40" action="K"/>
-            <key code="41" action="&#x0172;"/> <!-- LATIN CAPITAL LETTER U WITH OGONEK -->
+            <key code="41" action="Ų"/>
             <key code="42" output="Q"/>
-            <key code="43" output="&#x010c;"/> <!-- LATIN CAPITAL LETTER C WITH CARON -->
-            <key code="44" action="&#x0118;"/> <!-- LATIN CAPITAL LETTER E WITH OGONEK -->
+            <key code="43" output="Č"/>
+            <key code="44" action="Ę"/>
             <key code="45" action="N"/>
             <key code="46" action="M"/>
             <key code="47" output="F"/>
@@ -280,18 +278,18 @@
             <!-- Numeric keypad -->
             <!-- Key 65 is the Decimal delimiter key -->
             <key code="65" output=","/>
-            <key code="66" output="&#x001d;"/>
+            <key code="66" output="*"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
-            <key code="70" output="&#x001c;"/>
+            <key code="70" output="+"/>
             <!-- Key 71 is the Clear key -->
             <key code="71" output="&#x001b;"/> <!-- ESCAPE -->
-            <key code="72" output="&#x001f;"/>
+            <key code="72" output="="/>
             <!-- gap, 73 through 74 -->
             <key code="75" output="/"/>
             <key code="76" output="&#x0003;"/>
-            <key code="77" output="&#x001e;"/>
+            <key code="77" output="/"/>
             <key code="78" output="-"/>
             <key code="79" output="&#x0010;"/>
             <key code="80" output="&#x0010;"/>
@@ -345,18 +343,18 @@
             <key code="0" action="A"/>
             <key code="1" action="S"/>
             <key code="2" output="D"/>
-            <key code="3" output="&#x0160;"/> <!-- LATIN CAPITAL LETTER S WITH CARON -->
+            <key code="3" output="Š"/>
             <key code="4" action="H"/>
             <key code="5" action="G"/>
             <key code="6" action="Z"/>
-            <key code="7" action="&#x016a;"/> <!-- LATIN CAPITAL LETTER U WITH MACRON -->
+            <key code="7" action="Ū"/>
             <key code="8" action="C"/>
             <key code="9" action="V"/>
             <!-- Key 10 has position E00 on ISO keyboards, doesn't exist elsewhere -->
-            <key code="10" action="grave"/> <!-- deadkey grave -->
+            <key code="10" action="grave"/>
             <key code="11" output="B"/>
-            <key code="12" action="&#x0104;"/> <!-- LATIN CAPITAL LETTER A WITH OGONEK -->
-            <key code="13" output="&#x017d;"/> <!-- LATIN CAPITAL LETTER Z WITH CARON -->
+            <key code="12" action="Ą"/>
+            <key code="13" output="Ž"/>
             <key code="14" action="E"/>
             <key code="15" action="R"/>
             <key code="16" action="Y"/>
@@ -367,6 +365,7 @@
             <key code="21" output=";"/>
             <key code="22" output=","/>
             <key code="23" output=":"/>
+            <key code="24" action="X"/>
             <key code="25" output="("/>
             <key code="26" action="."/>
             <key code="27" output="?"/>
@@ -375,19 +374,19 @@
             <key code="30" action="W"/>
             <key code="31" action="O"/>
             <key code="32" action="U"/>
-            <key code="33" action="&#x012e;"/> <!-- LATIN CAPITAL LETTER I WITH OGONEK -->
+            <key code="33" action="Į"/>
             <key code="34" action="I"/>
             <key code="35" action="P"/>
             <!-- The Return key -->
-            <key code="36" output="&#x000d;"/>
+            <key code="36" output="&#x000d;"/> <!-- CARRIAGE RETURN (CR) -->
             <key code="37" action="L"/>
             <key code="38" action="J"/>
-            <key code="39" action="&#x0116;"/> <!-- LATIN CAPITAL LETTER E WITH DOT ABOVE -->
+            <key code="39" action="Ė"/>
             <key code="40" action="K"/>
-            <key code="41" action="&#x0172;"/> <!-- LATIN CAPITAL LETTER U WITH OGONEK -->
+            <key code="41" action="Ų"/>
             <key code="42" output="Q"/>
-            <key code="43" output="&#x010c;"/> <!-- LATIN CAPITAL LETTER C WITH CARON -->
-            <key code="44" action="&#x0118;"/> <!-- LATIN CAPITAL LETTER E WITH OGONEK -->
+            <key code="43" output="Č"/>
+            <key code="44" action="Ę"/>
             <key code="45" action="N"/>
             <key code="46" action="M"/>
             <key code="47" output="F"/>
@@ -420,7 +419,6 @@
             <key code="76" output="&#x0003;"/>
             <key code="77" output="/"/>
             <key code="78" output="-"/>
-            <!-- gap, 79 through 80 -->
             <key code="79" output="&#x0010;"/>
             <key code="80" output="&#x0010;"/>
             <key code="81" output="="/>
@@ -470,15 +468,14 @@
         </keyMap>
         <keyMap index="3">
             <!-- Level 3: Option pressed (Macs don't have an AltGr key) -->
-            <!-- codes 6, 7 and 8 could be used to compensate missing code 10 on non-European keyboards -->
             <key code="10" action="acute"/> <!-- deadkey acute -->
-            <key code="14" output="&#x20ac;"/> <!-- EURO SIGN -->
+            <key code="14" output="€"/>
             <key code="18" output="@"/>
             <key code="19" output="_"/>
             <key code="20" output="#"/>
             <key code="21" output="$"/>
             <key code="22" action="circumflex"/> <!-- deadkey circumflex -->
-            <key code="23" output="&#x00a7;"/> <!-- SECTION SIGN -->
+            <key code="23" output="§"/>
             <key code="24" output="%"/>
             <key code="25" output="["/>
             <key code="26" output="&#x0026;"/> <!-- AMPERSAND -->
@@ -488,76 +485,16 @@
             <key code="30" output="}"/>
             <key code="33" output="{"/>
             <key code="34" action="&#x0131;"/> <!-- LATIN SMALL LETTER DOTLESS I -->
-            <key code="36" output="&#x000d;"/>
+            <!-- The Return key -->
+            <key code="36" output="&#x000d;"/> <!-- CARRIAGE RETURN (CR) -->
             <key code="39" action="diaeresis"/> <!-- deadkey diaeresis as quotation mark &#x0022; -->
             <key code="42" output="|"/>
             <key code="43" output="&#x201e;"/> <!-- DOUBLE LOW-9 QUOTATION MARK -->
             <key code="44" output="\"/>
             <key code="47" output="&#x201c;"/> <!-- LEFT DOUBLE QUOTATION MARK (right in Lithuanian) -->
-            <key code="48" output="&#x0009;"/>
-            <!-- Space bar outputs non-breaking space -->
-            <key code="49" output="&#x00a0;"/>
+            <!-- Key 49 is the Space bar -->
+            <key code="49" output="&#x00a0;"/> <!-- NO-BREAK SPACE -->
             <key code="50" output="&#x2013;"/> <!-- EN DASH -->
-            <key code="51" output="&#x0008;"/>
-            <key code="52" output="&#x0003;"/>
-            <key code="53" output="&#x001b;"/>
-            <key code="64" output="&#x0010;"/>
-            <!-- Numeric keypad -->
-            <!-- Key 65 is the Decimal delimiter key -->
-            <key code="65" output=","/>
-            <key code="66" output="&#x001d;"/>
-            <key code="67" output="*"/>
-            <!-- gap, 68 -->
-            <key code="69" output="+"/>
-            <key code="70" output="&#x001c;"/>
-            <!-- Key 71 is the Clear key -->
-            <key code="71" output="&#x001b;"/> <!-- ESCAPE -->
-            <key code="72" output="&#x001f;"/>
-            <!-- gap, 73 through 74 -->
-            <key code="75" output="/"/>
-            <key code="76" output="&#x0003;"/>
-            <key code="77" output="&#x001e;"/>
-            <key code="78" output="-"/>
-            <key code="79" output="&#x0010;"/>
-            <key code="80" output="&#x0010;"/>
-            <key code="81" output="="/>
-            <key code="82" output="0"/>
-            <key code="83" output="1"/>
-            <key code="84" output="2"/>
-            <key code="85" output="3"/>
-            <key code="86" output="4"/>
-            <key code="87" output="5"/>
-            <key code="88" output="6"/>
-            <key code="89" output="7"/>
-            <!-- gap, 90 -->
-            <key code="91" output="8"/>
-            <key code="92" output="9"/>
-            <key code="96" output="&#x0010;"/>
-            <key code="97" output="&#x0010;"/>
-            <key code="98" output="&#x0010;"/>
-            <key code="99" output="&#x0010;"/>
-            <key code="100" output="&#x0010;"/>
-            <key code="101" output="&#x0010;"/>
-            <key code="103" output="&#x0010;"/>
-            <key code="105" output="&#x0010;"/>
-            <key code="106" output="&#x0010;"/>
-            <key code="107" output="&#x0010;"/>
-            <key code="109" output="&#x0010;"/>
-            <key code="111" output="&#x0010;"/>
-            <key code="113" output="&#x0010;"/>
-            <key code="114" output="&#x0005;"/>
-            <key code="115" output="&#x0001;"/>
-            <key code="116" output="&#x000b;"/>
-            <key code="117" output="&#x007f;"/>
-            <key code="118" output="&#x0010;"/>
-            <key code="119" output="&#x0004;"/>
-            <key code="120" output="&#x0010;"/>
-            <key code="121" output="&#x000c;"/>
-            <key code="122" output="&#x0010;"/>
-            <key code="123" output="&#x001c;"/>
-            <key code="124" output="&#x001d;"/>
-            <key code="125" output="&#x001f;"/>
-            <key code="126" output="&#x001e;"/>
         </keyMap>
     </keyMapSet>
     <keyMapSet id="ANSI">
@@ -590,51 +527,40 @@
         <keyMap index="0" baseMapSet="ISO" baseIndex="0">
             <!-- Level 1: no modifiers -->
             <!-- Key 93 has position E13 on JIS keyboards, and doesn't exist elsewhere. Use it to compensate missing E00 key -->
-            <key code="93" action="grave"/>
-            <!-- deadkey grave -->
+            <key code="93" action="grave"/> <!-- deadkey grave -->
             <!-- Key 94 has position B11 on JIS keyboards, and doesn't exist elsewhere. Use it to compensate missing B00 key -->
-            <key code="94" output="&#x003c;"/>
-            <!-- LESS-THAN SIGN -->
+            <key code="94" output="&#x003c;"/> <!-- LESS-THAN SIGN -->
             <!-- Key 95 is an additional digit separator on JIS keyboards -->
             <key code="95" output="."/>
         </keyMap>
         <keyMap index="1" baseMapSet="ISO" baseIndex="1">
             <!-- Level 2: Shift pressed -->
             <!-- Key 93 has position E13 on JIS keyboards, and doesn't exist elsewhere. Use it to compensate missing E00 key -->
-            <key code="93" action="tilde"/>
-            <!-- deadkey tilde -->
+            <key code="93" action="tilde"/> <!-- deadkey tilde -->
             <!-- Key 94 has position B11 on JIS keyboards, and doesn't exist elsewhere. Use it to compensate missing B00 key -->
-            <key code="94" output="&#x003e;"/>
-            <!-- GREATER-THAN SIGN -->
+            <key code="94" output="&#x003e;"/> <!-- GREATER-THAN SIGN -->
             <!-- Key 95 is an additional digit separator on JIS keyboards -->
             <key code="95" output="."/>
         </keyMap>
         <keyMap index="2" baseMapSet="ISO" baseIndex="2">
             <!-- Caps Lock on: same as keyMap 1 for letters, same as keyMap 0 for other symbols -->
             <!-- Key 93 has position E13 on JIS keyboards, and doesn't exist elsewhere. Use it to compensate missing E00 key -->
-            <key code="93" action="grave"/>
-            <!-- deadkey grave -->
+            <key code="93" action="grave"/> <!-- deadkey grave -->
             <!-- Key 94 has position B11 on JIS keyboards, and doesn't exist elsewhere. Use it to compensate missing B00 key -->
-            <key code="94" output="&#x003c;"/>
-            <!-- LESS-THAN SIGN -->
+            <key code="94" output="&#x003c;"/> <!-- LESS-THAN SIGN -->
             <!-- Key 95 is an additional digit separator on JIS keyboards -->
             <key code="95" output="."/>
         </keyMap>
         <keyMap index="3" baseMapSet="ISO" baseIndex="3">
             <!-- Level 3: Option pressed (Macs don't have an AltGr key) -->
             <!-- There is no key in position B00 on JIS keyboards. Compensate it with Option level of keys B01, B02, B03 for compatibility with ANSI -->
-            <key code="6" output="&#x003c;"/>
-            <!-- LESS-THAN SIGN -->
-            <key code="7" output="&#x003e;"/>
-            <!-- GREATER-THAN SIGN -->
-            <key code="8" output="&#x2013;"/>
-            <!-- EN DASH -->
+            <key code="6" output="&#x003c;"/> <!-- LESS-THAN SIGN -->
+            <key code="7" output="&#x003e;"/> <!-- GREATER-THAN SIGN -->
+            <key code="8" output="&#x2013;"/> <!-- EN DASH -->
             <!-- Key 93 has position E13 on JIS keyboards, and doesn't exist elsewhere. Use it to compensate missing E00 key -->
-            <key code="93" action="acute"/>
-            <!-- deadkey acute -->
+            <key code="93" action="acute"/> <!-- deadkey acute -->
             <!-- Key 94 has position B11 on JIS keyboards, and doesn't exist elsewhere. Use it to compensate missing B00 key -->
-            <key code="94" output="&#x2013;"/>
-            <!-- EN DASH -->
+            <key code="94" output="&#x2013;"/> <!-- EN DASH -->
             <!-- Key 95 is an additional digit separator on JIS keyboards -->
             <key code="95" output="."/>
         </keyMap>
@@ -645,7 +571,7 @@
             <when state="acute" output="&#x00b4;"/> <!-- ACUTE ACCENT -->
             <when state="circumflex" output="^"/> <!-- CIRCUMFLEX -->
             <when state="diaeresis" output="&#x0022;"/> <!-- QUOTATION MARK -->
-            <when state="grave" output="`"/> <!-- GRAVE ACCENT -->
+            <when state="grave" output="&#x0060;"/> <!-- GRAVE ACCENT -->
             <when state="tilde" output="~"/> <!-- TILDE -->
         </action>
         <action id="A">
@@ -664,15 +590,15 @@
             <when state="grave" output="&#x00e0;"/> <!-- LATIN SMALL LETTER A WITH GRAVE -->
             <when state="tilde" output="&#x00e3;"/> <!-- LATIN SMALL LETTER A WITH ACUTE -->
         </action>
-        <action id="&#x0104;"> <!-- LATIN CAPITAL LETTER A WITH OGONEK -->
-            <when state="none" output="&#x0104;"/> <!-- LATIN CAPITAL LETTER A WITH OGONEK -->
-            <when state="acute" output="&#x0104;&#x0301;"/> <!-- LATIN CAPITAL LETTER A WITH OGONEK AND ACUTE -->
-            <when state="tilde" output="&#x0104;&#x0303;"/> <!-- LATIN CAPITAL LETTER A WITH OGONEK AND TILDE -->
+        <action id="Ą">
+            <when state="none" output="Ą"/> <!-- LATIN CAPITAL LETTER A WITH OGONEK -->
+            <when state="acute" output="Ą&#x0301;"/> <!-- LATIN CAPITAL LETTER A WITH OGONEK AND ACUTE -->
+            <when state="tilde" output="Ą&#x0303;"/> <!-- LATIN CAPITAL LETTER A WITH OGONEK AND TILDE -->
         </action>
-        <action id="&#x0105;"> <!-- LATIN SMALL LETTER A WITH OGONEK -->
-            <when state="none" output="&#x0105;"/> <!-- LATIN SMALL LETTER A WITH OGONEK -->
-            <when state="acute" output="&#x0105;&#x0301;"/> <!-- LATIN SMALL LETTER A WITH OGONEK AND ACUTE -->
-            <when state="tilde" output="&#x0105;&#x0303;"/> <!-- LATIN SMALL LETTER A WITH OGONEK AND TILDE -->
+        <action id="ą">
+            <when state="none" output="ą"/> <!-- LATIN SMALL LETTER A WITH OGONEK -->
+            <when state="acute" output="ą&#x0301;"/> <!-- LATIN SMALL LETTER A WITH OGONEK AND ACUTE -->
+            <when state="tilde" output="ą&#x0303;"/> <!-- LATIN SMALL LETTER A WITH OGONEK AND TILDE -->
         </action>
         <action id="C">
             <when state="none" output="C"/>
@@ -700,25 +626,25 @@
             <when state="grave" output="&#x00e8;"/> <!-- LATIN SMALL LETTER E WITH GRAVE -->
             <when state="tilde" output="&#x1ebd;"/> <!-- LATIN SMALL LETTER E WITH TILDE -->
         </action>
-        <action id="&#x0118;"> <!-- LATIN CAPITAL LETTER E WITH OGONEK -->
-            <when state="none" output="&#x0118;"/> <!-- LATIN CAPITAL LETTER E WITH OGONEK -->
-            <when state="acute" output="&#x0118;&#x0301;"/> <!-- LATIN CAPITAL LETTER E WITH OGONEK AND ACUTE -->
-            <when state="tilde" output="&#x0118;&#x0303;"/> <!-- LATIN CAPITAL LETTER E WITH OGONEK AND TILDE -->
+        <action id="Ę">
+            <when state="none" output="Ę"/> <!-- LATIN CAPITAL LETTER E WITH OGONEK -->
+            <when state="acute" output="Ę&#x0301;"/> <!-- LATIN CAPITAL LETTER E WITH OGONEK AND ACUTE -->
+            <when state="tilde" output="Ę&#x0303;"/> <!-- LATIN CAPITAL LETTER E WITH OGONEK AND TILDE -->
         </action>
-        <action id="&#x0119;"> <!-- LATIN SMALL LETTER E WITH OGONEK -->
-            <when state="none" output="&#x0119;"/> <!-- LATIN SMALL LETTER E WITH OGONEK -->
-            <when state="acute" output="&#x0119;&#x0301;"/> <!-- LATIN SMALL LETTER E WITH OGONEK AND ACUTE -->
-            <when state="tilde" output="&#x0119;&#x0303;"/> <!-- LATIN SMALL LETTER E WITH OGONEK AND TILDE -->
+        <action id="ę">
+            <when state="none" output="ę"/> <!-- LATIN SMALL LETTER E WITH OGONEK -->
+            <when state="acute" output="ę&#x0301;"/> <!-- LATIN SMALL LETTER E WITH OGONEK AND ACUTE -->
+            <when state="tilde" output="ę&#x0303;"/> <!-- LATIN SMALL LETTER E WITH OGONEK AND TILDE -->
         </action>
-        <action id="&#x0116;"> <!-- LATIN CAPITAL LETTER E WITH DOT ABOVE -->
-            <when state="none" output="&#x0116;"/> <!-- LATIN CAPITAL LETTER E WITH DOT ABOVE -->
-            <when state="grave" output="&#x0116;&#x0301;"/> <!-- LATIN CAPITAL LETTER E WITH DOT ABOVE AND ACUTE -->
-            <when state="tilde" output="&#x0116;&#x0303;"/> <!-- LATIN CAPITAL LETTER E WITH DOT ABOVE AND TILDE -->
+        <action id="Ė">
+            <when state="none" output="Ė"/> <!-- LATIN CAPITAL LETTER E WITH DOT ABOVE -->
+            <when state="grave" output="Ė&#x0301;"/> <!-- LATIN CAPITAL LETTER E WITH DOT ABOVE AND ACUTE -->
+            <when state="tilde" output="Ė&#x0303;"/> <!-- LATIN CAPITAL LETTER E WITH DOT ABOVE AND TILDE -->
         </action>
-        <action id="&#x0117;"> <!-- LATIN SMALL LETTER E WITH DOT ABOVE -->
-            <when state="none" output="&#x0117;"/> <!-- LATIN SMALL LETTER E WITH DOT ABOVE -->
-            <when state="acute" output="&#x0117;&#x0301;"/> <!-- LATIN SMALL LETTER E WITH DOT ABOVE AND ACUTE -->
-            <when state="tilde" output="&#x0117;&#x0303;"/> <!-- LATIN SMALL LETTER E WITH DOT ABOVE AND TILDE -->
+        <action id="ė">
+            <when state="none" output="ė"/> <!-- LATIN SMALL LETTER E WITH DOT ABOVE -->
+            <when state="acute" output="ė&#x0301;"/> <!-- LATIN SMALL LETTER E WITH DOT ABOVE AND ACUTE -->
+            <when state="tilde" output="ė&#x0303;"/> <!-- LATIN SMALL LETTER E WITH DOT ABOVE AND TILDE -->
         </action>
         <action id="G">
             <when state="none" output="G"/>
@@ -756,15 +682,15 @@
             <when state="grave" output="i&#x0307;&#x0300;"/> <!-- LATIN SMALL LETTER I WITH DOT ABOVE AND GRAVE -->
             <when state="tilde" output="i&#x0307;&#x0303;"/> <!-- LATIN SMALL LETTER I WITH DOT ABOVE AND TILDE -->
         </action>
-        <action id="&#x012e;"> <!-- LATIN CAPITAL LETTER I WITH OGONEK -->
-            <when state="none" output="&#x012e;"/> <!-- LATIN CAPITAL LETTER I WITH OGONEK -->
-            <when state="acute" output="&#x012e;&#x0301;"/> <!-- LATIN CAPITAL LETTER I WITH OGONEK AND ACUTE -->
-            <when state="tilde" output="&#x012e;&#x0303;"/> <!-- LATIN CAPITAL LETTER I WITH OGONEK AND TILDE -->
+        <action id="Į">
+            <when state="none" output="Į"/> <!-- LATIN CAPITAL LETTER I WITH OGONEK -->
+            <when state="acute" output="Į&#x0301;"/> <!-- LATIN CAPITAL LETTER I WITH OGONEK AND ACUTE -->
+            <when state="tilde" output="Į&#x0303;"/> <!-- LATIN CAPITAL LETTER I WITH OGONEK AND TILDE -->
         </action>
-        <action id="&#x012f;"> <!-- LATIN SMALL LETTER I WITH OGONEK -->
-            <when state="none" output="&#x012f;"/> <!-- LATIN SMALL LETTER I WITH OGONEK -->
-            <when state="acute" output="&#x012f;&#x0307;&#x0301;"/> <!-- LATIN SMALL LETTER I WITH OGONEK AND DOT ABOVE AND ACUTE -->
-            <when state="tilde" output="&#x012f;&#x0307;&#x0303;"/> <!-- LATIN SMALL LETTER I WITH OGONEK AND DOT ABOVE AND TILDE -->
+        <action id="į">
+            <when state="none" output="į"/> <!-- LATIN SMALL LETTER I WITH OGONEK -->
+            <when state="acute" output="į&#x0307;&#x0301;"/> <!-- LATIN SMALL LETTER I WITH OGONEK AND DOT ABOVE AND ACUTE -->
+            <when state="tilde" output="į&#x0307;&#x0303;"/> <!-- LATIN SMALL LETTER I WITH OGONEK AND DOT ABOVE AND TILDE -->
         </action>
         <action id="&#x0131;"> <!-- LATIN SMALL LETTER DOTLESS I -->
             <when state="none" output="&#x0131;"/> <!-- LATIN SMALL LETTER DOTLESS I -->
@@ -886,25 +812,25 @@
             <when state="grave" output="&#x00f9;"/> <!-- LATIN SMALL LETTER U WITH GRAVE -->
             <when state="tilde" output="&#x0169;"/> <!-- LATIN SMALL LETTER U WITH TILDE -->
         </action>
-        <action id="&#x0172;"> <!-- LATIN CAPITAL LETTER U WITH OGONEK -->
-            <when state="none" output="&#x0172;"/> <!-- LATIN CAPITAL LETTER U WITH OGONEK -->
-            <when state="acute" output="&#x0172;&#x0301;"/> <!-- LATIN CAPITAL LETTER U WITH OGONEK AND ACUTE -->
-            <when state="tilde" output="&#x0172;&#x0303;"/> <!-- LATIN CAPITAL LETTER U WITH OGONEK AND TILDE -->
+        <action id="Ų">
+            <when state="none" output="Ų"/> <!-- LATIN CAPITAL LETTER U WITH OGONEK -->
+            <when state="acute" output="Ų&#x0301;"/> <!-- LATIN CAPITAL LETTER U WITH OGONEK AND ACUTE -->
+            <when state="tilde" output="Ų&#x0303;"/> <!-- LATIN CAPITAL LETTER U WITH OGONEK AND TILDE -->
         </action>
-        <action id="&#x0173;"> <!-- LATIN SMALL LETTER U WITH OGONEK -->
-            <when state="none" output="&#x0173;"/> <!-- LATIN SMALL LETTER U WITH OGONEK -->
-            <when state="acute" output="&#x0173;&#x0301;"/> <!-- LATIN SMALL LETTER U WITH OGONEK AND ACUTE -->
-            <when state="tilde" output="&#x0173;&#x0303;"/> <!-- LATIN SMALL LETTER U WITH OGONEK AND TILDE -->
+        <action id="ų">
+            <when state="none" output="ų"/> <!-- LATIN SMALL LETTER U WITH OGONEK -->
+            <when state="acute" output="ų&#x0301;"/> <!-- LATIN SMALL LETTER U WITH OGONEK AND ACUTE -->
+            <when state="tilde" output="ų&#x0303;"/> <!-- LATIN SMALL LETTER U WITH OGONEK AND TILDE -->
         </action>
-        <action id="&#x016a;"> <!-- LATIN CAPITAL LETTER U WITH MACRON -->
-            <when state="none" output="&#x016a;"/> <!-- LATIN CAPITAL LETTER U WITH MACRON -->
-            <when state="acute" output="&#x016a;&#x0301;"/> <!-- LATIN CAPITAL LETTER U WITH MACRON AND ACUTE -->
-            <when state="tilde" output="&#x016a;&#x0303;"/> <!-- LATIN CAPITAL LETTER U WITH MACRON AND TILDE -->
+        <action id="Ū">
+            <when state="none" output="Ū"/> <!-- LATIN CAPITAL LETTER U WITH MACRON -->
+            <when state="acute" output="Ū&#x0301;"/> <!-- LATIN CAPITAL LETTER U WITH MACRON AND ACUTE -->
+            <when state="tilde" output="Ū&#x0303;"/> <!-- LATIN CAPITAL LETTER U WITH MACRON AND TILDE -->
         </action>
-        <action id="&#x016b;"> <!-- LATIN SMALL LETTER U WITH MACRON -->
-            <when state="none" output="&#x016b;"/> <!-- LATIN SMALL LETTER U WITH MACRON -->
-            <when state="acute" output="&#x016b;&#x0301;"/> <!-- LATIN SMALL LETTER U WITH MACRON AND ACUTE -->
-            <when state="tilde" output="&#x016b;&#x0303;"/> <!-- LATIN SMALL LETTER U WITH MACRON AND TILDE-->
+        <action id="ū">
+            <when state="none" output="ū"/> <!-- LATIN SMALL LETTER U WITH MACRON -->
+            <when state="acute" output="ū&#x0301;"/> <!-- LATIN SMALL LETTER U WITH MACRON AND ACUTE -->
+            <when state="tilde" output="ū&#x0303;"/> <!-- LATIN SMALL LETTER U WITH MACRON AND TILDE-->
         </action>
         <action id="V">
             <when state="none" output="V"/>
@@ -995,7 +921,7 @@
         <when state="acute" output="&#x00b4;"/> <!-- ACUTE ACCENT -->
         <when state="circumflex" output="^"/>
         <when state="diaeresis" output="&#x0022;"/> <!-- QUOTATION MARK -->
-        <when state="grave" output="`"/>
+        <when state="grave" output="&#x0060;"/> <!-- GRAVE ACCENT -->
         <when state="tilde" output="~"/>
     </terminators>
 </keyboard>
