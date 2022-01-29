@@ -1,0 +1,7 @@
+*.zip
+*.dmg
+*.swp
+.DS_Store
+.idea
+.create-dmg
+.dmg
