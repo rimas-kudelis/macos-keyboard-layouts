@@ -2,7 +2,8 @@
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <keyboard group="126" id="-9559" name="Lithuanian - Numeric" maxout="3">
     <layouts>
-        <layout first="0" last="17" modifiers="commonModifiers" mapSet="ANSI"/>
+        <!-- This layout makes no distinction between ISO, ANSI and JIS keyboards -->
+        <layout first="0" last="0" modifiers="commonModifiers" mapSet="ANSI"/>
     </layouts>
     <modifierMap id="commonModifiers" defaultIndex="0">
         <keyMapSelect mapIndex="0">
@@ -23,6 +24,7 @@
     </modifierMap>
     <keyMapSet id="ANSI">
         <keyMap index="0">
+            <!-- Level 1: no modifiers -->
             <key code="0" output="a"/>
             <key code="1" output="s"/>
             <key code="2" output="d"/>
@@ -33,7 +35,8 @@
             <key code="7" output="x"/>
             <key code="8" output="c"/>
             <key code="9" output="v"/>
-            <key code="10" output="`"/>
+            <!-- Key 10 has position E00 on ISO keyboards, doesn't exist elsewhere -->
+            <key code="10" output="&#x00a7;"/> <!-- SECTION SIGN -->
             <key code="11" output="b"/>
             <key code="12" output="q"/>
             <key code="13" output="w"/>
@@ -48,18 +51,18 @@
             <key code="22" output="š"/>
             <key code="23" output="į"/>
             <key code="24" output="ž"/>
-            <key code="25" output="„"/>
+            <key code="25" output="&#x201e;"/> <!-- DOUBLE LOW-9 QUOTATION MARK-->
             <key code="26" output="ų"/>
             <key code="27" output="-"/>
             <key code="28" output="ū"/>
-            <key code="29" output="“"/>
+            <key code="29" output="&#x201c;"/> <!-- LEFT DOUBLE QUOTATION MARK -->
             <key code="30" output="]"/>
             <key code="31" output="o"/>
             <key code="32" output="u"/>
             <key code="33" output="["/>
             <key code="34" output="i"/>
             <key code="35" output="p"/>
-            <!-- The Return key -->
+            <!-- Key 36 is the Return key -->
             <key code="36" output="&#x000d;"/>
             <key code="37" output="l"/>
             <key code="38" output="j"/>
@@ -72,29 +75,28 @@
             <key code="45" output="n"/>
             <key code="46" output="m"/>
             <key code="47" output="."/>
-            <!-- The Tab key-->
-            <key code="48" output="&#x0009;"/>
-            <!-- Space bar -->
-            <key code="49" output=" "/>
-            <!-- The „European“ key, which lives between Shift and Z -->
-            <key code="50" output="–"/>
-            <!-- Backspace -->
+            <!-- Key 48 is the Tab key-->
+            <key code="48" output="&#x0009;"/> <!-- CHARACTER TABULATION -->
+            <!-- Key 49 is the Space bar -->
+            <key code="49" output="&#x0020;"/> <!-- SPACE -->
+            <!-- Key 50 has position B00 on ISO keyboards, but E00 on ANSI keyboards -->
+            <key code="50" output="&#x0060;"/> <!-- GRAVE ACCENT -->
+            <!-- Key 51 is the Backspace key -->
             <key code="51" output="&#x0008;"/>
-            <!-- ??? -->
-            <key code="52" output="&#x0003;"/>
-            <!-- Escape -->
-            <key code="53" output="&#x001b;"/>
+            <key code="52" output="&#x0003;"/> <!-- END OF TEXT -->
+            <!-- Key 53 is the Escape key -->
+            <key code="53" output="&#x001b;"/> <!-- ESCAPE -->
             <!-- gap, 54 through 64 -->
             <!-- Numeric keypad -->
-            <!-- Decimal delimiter -->
+            <!-- Key 65 is the Decimal delimiter key -->
             <key code="65" output=","/>
             <key code="66" output="*"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
             <key code="70" output="+"/>
-            <!-- The Clear button -->
-            <key code="71" output="&#x001b;"/>
+            <!-- Key 71 is the Clear key -->
+            <key code="71" output="&#x001b;"/> <!-- ESCAPE -->
             <key code="72" output="="/>
             <!-- gap, 73 through 74 -->
             <key code="75" output="/"/>
@@ -148,6 +150,7 @@
             <key code="126" output="&#x001e;"/>
         </keyMap>
         <keyMap index="1">
+            <!-- Level 2: Shift pressed -->
             <key code="0" output="A"/>
             <key code="1" output="S"/>
             <key code="2" output="D"/>
@@ -158,7 +161,8 @@
             <key code="7" output="X"/>
             <key code="8" output="C"/>
             <key code="9" output="V"/>
-            <key code="10" output="~"/>
+            <!-- Key 10 has position E00 on ISO keyboards, doesn't exist elsewhere -->
+            <key code="10" output="&#x00b1;"/> <!-- PLUS-MINUS SIGN -->
             <key code="11" output="B"/>
             <key code="12" output="Q"/>
             <key code="13" output="W"/>
@@ -184,7 +188,7 @@
             <key code="33" output="{"/>
             <key code="34" output="I"/>
             <key code="35" output="P"/>
-            <!-- The Return key -->
+            <!-- Key 36 is the Return key -->
             <key code="36" output="&#x000d;"/>
             <key code="37" output="L"/>
             <key code="38" output="J"/>
@@ -192,33 +196,32 @@
             <key code="40" output="K"/>
             <key code="41" output=":"/>
             <key code="42" output="|"/>
-            <key code="43" output="&#x003c;"/><!-- less than -->
+            <key code="43" output="&#x003c;"/> <!-- LESS-THAN SIGN -->
             <key code="44" output="?"/>
             <key code="45" output="N"/>
             <key code="46" output="M"/>
-            <key code="47" output="&#x003e;"/><!-- greater than -->
-            <!-- The Tab key-->
+            <key code="47" output="&#x003e;"/> <!-- GREATER-THAN SIGN -->
+            <!-- Key 48 is the Tab key-->
             <key code="48" output="&#x0009;"/>
-            <!-- Space bar -->
+            <!-- Key 49 is the Space bar -->
             <key code="49" output=" "/>
-            <!-- The „European“ key, which lives between Shift and Z -->
-            <key code="50" output="€"/>
-            <!-- Backspace -->
+            <!-- Key 50 has position B00 on ISO keyboards, but E00 on ANSI keyboards -->
+            <key code="50" output="~"/>
+            <!-- Key 51 is the Backspace key -->
             <key code="51" output="&#x0008;"/>
-            <!-- ??? -->
             <key code="52" output="&#x0003;"/>
-            <!-- Escape -->
+            <!-- Key 53 is the Escape key -->
             <key code="53" output="&#x001b;"/>
             <!-- gap, 54 through 64 -->
             <!-- Numeric keypad -->
-            <!-- Decimal delimiter -->
+            <!-- Key 65 is the Decimal delimiter key -->
             <key code="65" output=","/>
             <key code="66" output="*"/>
             <key code="67" output="*"/>
             <!-- gap, 68 -->
             <key code="69" output="+"/>
             <key code="70" output="+"/>
-            <!-- The Clear button -->
+            <!-- Key 71 is the Clear key -->
             <key code="71" output="&#x001b;"/>
             <key code="72" output="="/>
             <!-- gap, 73 through 74 -->
@@ -273,6 +276,7 @@
             <key code="126" output="&#x001e;"/>
         </keyMap>
         <keyMap index="2">
+            <!-- Caps Lock on: same as keyMap 1 for letters, same as keyMap 0 for other symbols -->
             <key code="0" output="A"/>
             <key code="1" output="S"/>
             <key code="2" output="D"/>
@@ -283,7 +287,8 @@
             <key code="7" output="X"/>
             <key code="8" output="C"/>
             <key code="9" output="V"/>
-            <key code="10" output="`"/>
+            <!-- Key 10 has position E00 on ISO keyboards, doesn't exist elsewhere -->
+            <key code="10" output="&#x00a7;"/> <!-- SECTION SIGN -->
             <key code="11" output="B"/>
             <key code="12" output="Q"/>
             <key code="13" output="W"/>
@@ -298,18 +303,18 @@
             <key code="22" output="Š"/>
             <key code="23" output="Į"/>
             <key code="24" output="Ž"/>
-            <key code="25" output="„"/>
+            <key code="25" output="&#x201e;"/> <!-- DOUBLE LOW-9 QUOTATION MARK-->
             <key code="26" output="Ų"/>
             <key code="27" output="-"/>
             <key code="28" output="Ū"/>
-            <key code="29" output="“"/>
+            <key code="29" output="&#x201c;"/> <!-- LEFT DOUBLE QUOTATION MARK -->
             <key code="30" output="]"/>
             <key code="31" output="O"/>
             <key code="32" output="U"/>
             <key code="33" output="["/>
             <key code="34" output="I"/>
             <key code="35" output="P"/>
-            <!-- The Return key -->
+            <!-- Key 36 is the Return key -->
             <key code="36" output="&#x000d;"/>
             <key code="37" output="L"/>
             <key code="38" output="J"/>
@@ -322,21 +327,20 @@
             <key code="45" output="N"/>
             <key code="46" output="M"/>
             <key code="47" output="."/>
-            <!-- The Tab key-->
-            <key code="48" output="&#x0009;"/>
-            <!-- Space bar -->
-            <key code="49" output=" "/>
-            <!-- The „European“ key, which lives between Shift and Z -->
-            <key code="50" output="–"/>
-            <!-- Backspace -->
+            <!-- Key 48 is the Tab key-->
+            <key code="48" output="&#x0009;"/> <!-- CHARACTER TABULATION -->
+            <!-- Key 49 is the Space bar -->
+            <key code="49" output="&#x0020;"/> <!-- SPACE -->
+            <!-- Key 50 has position B00 on ISO keyboards, but E00 on ANSI keyboards -->
+            <key code="50" output="&#x0060;"/> <!-- GRAVE ACCENT -->
+            <!-- Key 51 is the Backspace key -->
             <key code="51" output="&#x0008;"/>
-            <!-- ??? -->
-            <key code="52" output="&#x0003;"/>
-            <!-- Escape -->
-            <key code="53" output="&#x001b;"/>
+            <key code="52" output="&#x0003;"/> <!-- END OF TEXT -->
+            <!-- Key 53 is the Escape key -->
+            <key code="53" output="&#x001b;"/> <!-- ESCAPE -->
             <!-- gap, 54 through 64 -->
             <!-- Numeric keypad -->
-            <!-- Decimal delimiter -->
+            <!-- Key 65 is the Decimal delimiter key -->
             <key code="65" output=","/>
             <key code="66" output="*"/>
             <key code="67" output="*"/>
@@ -408,9 +412,11 @@
             <key code="24" output="="/>
             <key code="25" output="9"/>
             <key code="26" output="7"/>
-            <key code="27" output="–"/>
+            <key code="27" output="&#x2013;"/> <!-- EN DASH -->
             <key code="28" output="8"/>
             <key code="29" output="0"/>
+            <!-- Key 50 has position B00 on ISO keyboards, but E00 on ANSI keyboards -->
+            <key code="50" output="&#x00b4;"/> <!-- ACUTE ACCENT -->
         </keyMap>
         <keyMap index="4">
             <key code="18" output="!"/>
@@ -421,71 +427,9 @@
             <key code="23" output="%"/>
             <key code="24" output="+"/>
             <key code="25" output="("/>
-            <key code="26" output="&#x0026;"/>
+            <key code="26" output="&#x0026;"/> <!-- AMPERSAND -->
             <key code="28" output="*"/>
             <key code="29" output=")"/>
         </keyMap>
     </keyMapSet>
-<!--
-    <actions>
-        <action id="`">
-            <when state="none" next="1"/>
-        </action>
-        <action id=" ">
-            <when state="1" output="`"/>
-            <when state="none" output=" "/>
-        </action>
-        <action id="A">
-            <when state="1" output="À"/>
-            <when state="none" output="A"/>
-        </action>
-        <action id="E">
-            <when state="1" output="È"/>
-            <when state="none" output="E"/>
-        </action>
-        <action id="I">
-            <when state="1" output="Ì"/>
-            <when state="none" output="I"/>
-        </action>
-        <action id="O">
-            <when state="1" output="Ò"/>
-            <when state="none" output="O"/>
-        </action>
-        <action id="U">
-            <when state="1" output="Ù"/>
-            <when state="none" output="U"/>
-        </action>
-        <action id="Y">
-            <when state="1" output="Ỳ"/>
-            <when state="none" output="Y"/>
-        </action>
-        <action id="a">
-            <when state="1" output="à"/>
-            <when state="none" output="a"/>
-        </action>
-        <action id="e">
-            <when state="1" output="è"/>
-            <when state="none" output="e"/>
-        </action>
-        <action id="i">
-            <when state="1" output="i&#x0307;&#x0300;"/>
-            <when state="none" output="i"/>
-        </action>
-        <action id="o">
-            <when state="1" output="ò"/>
-            <when state="none" output="o"/>
-        </action>
-        <action id="u">
-            <when state="1" output="ù"/>
-            <when state="none" output="u"/>
-        </action>
-        <action id="y">
-            <when state="1" output="ỳ"/>
-            <when state="none" output="y"/>
-        </action>
-    </actions>
-    <terminators>
-        <when state="1" output="`"/>
-    </terminators>
--->
 </keyboard>
