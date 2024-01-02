@@ -10,9 +10,9 @@ which allows entering digits and special characters via the Option key, like
 any normal layout should.
 
 In addition, two other layouts are provided: Standard, which is made according
-to Lithuanian Standard LST-1582:2012 (more info: [klav.lt](http://klav.lt)),
-and Accented, which adds the ability to enter some accented characters to the
-Standard layout.
+to Lithuanian Standard LST-1582:2012
+([more info](http://www.ims.mii.lt/klav/lithkeyb4.html)), and Accented, which
+adds the ability to enter some accented characters to the Standard layout.
 
 I don't see much to copyright here, so feel free to use these files however
 you want to.
@@ -32,9 +32,9 @@ ir spec. ženklus galima įvesti, laikant nuspaustą Option klavišą – visiš
 taip pat, kaip tai daroma AltGr klavišo pagalba „Windows“ ir „Linux“ sistemose.
 
 Be „Numeric“ (arba „Skaitmenų eilės“) išdėstymo, čia rasite dar du. Pirmasis,
-pavadinimu „Standard“, atitinka Lietuvos standartą LST 1582:2012 (plačiau
-apie jį – svetainėje [klav.lt](http://klav.lt)). Antrasis, pavadinimu
-„Accented“, išplečia „Standard“, pridėdamas galimybę per tęsties ženklus
-įvesti kirčiuotas raides (ar tiesiog lotyniškas raides su diakritikais).
+pavadinimu „Standard“, atitinka Lietuvos standartą LST 1582:2012 ([plačiau
+apie jį](http://www.ims.mii.lt/klav/)). Antrasis, pavadinimu „Accented“,
+išplečia „Standard“, pridėdamas galimybę per tęsties ženklus įvesti kirčiuotas
+raides (ar tiesiog lotyniškas raides su diakritikais).
 
 Šiuos išdėstymus galite naudoti ir/ar platinti kaip tik norite.
