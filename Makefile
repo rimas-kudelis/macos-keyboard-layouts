@@ -16,7 +16,7 @@ dmgs: download-create-dmg clean-dmgs
 	    BASENAME=$$(basename "$${BUNDLE}" .bundle) ; \
 	    (cd .create-dmg && ./create-dmg \
 	        --volicon "$$(find "../$${BUNDLE}" -name "*.icns")" \
-	        --volname "$${BASENAME}}" \
+	        --volname "$${BASENAME}" \
 	        --background "../etc/dmg_background.png" \
 	        --window-size 600 400 \
 	        --icon-size 100 \
@@ -35,7 +35,7 @@ download-create-dmg:
 	touch .create-dmg/.this-is-the-create-dmg-repo ; \
 	for FILE in create-dmg support/template.applescript support/eula-resources-template.xml; do \
 	    if [ ! -f .create-dmg/$${FILE} ] ; then \
-	        curl https://raw.githubusercontent.com/create-dmg/create-dmg/v1.0.9/$${FILE} --output .create-dmg/$${FILE} ; \
+	        curl https://raw.githubusercontent.com/create-dmg/create-dmg/v1.2.1/$${FILE} --output .create-dmg/$${FILE} ; \
 	    fi ; \
 	done ; \
 	chmod +x .create-dmg/create-dmg
