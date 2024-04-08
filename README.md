@@ -1,6 +1,6 @@
 # Lithuanian keyboard layouts for macOS
 
-macOS only comes with one keyboard layout for Lithanian, but it's terrible.
+macOS only comes with one keyboard layout for Lithuanian, but it's terrible.
 It requires using a dead key to enter digits or special characters, which is
 super inconvenient and outright doesn't work in password fields. The layout
 was probably copied over from Windows 95 and remained unchanged since.
@@ -25,7 +25,7 @@ Norint juo įvesti skaitmenis ar specialiuosius ženklus, tenka naudotis
 tęsties („mirusiuoju“) klavišu, kas yra savaime nepatogu, nekalbant jau apie
 tai, jog šis metodas tiesiog neveikia slaptažodžių laukuose (o gal ir ne tik
 juose). Šis išdėstymas veikiausiai buvo nukopijuotas nuo „Windows 95“ ir
-niekada pakartotinai neperžiūrėtas.
+niekada vėliau neperžiūrėtas.
 
 Čia rasite patobulintą šio išdėstymo variantą („Numeric“), kuriuo skaitmenis
 ir spec. ženklus galima įvesti, laikant nuspaustą Option klavišą – visiškai
